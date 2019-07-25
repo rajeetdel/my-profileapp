@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-profileapp/static/css/main.4697979b.chunk.css",
+    "main.js": "/my-profileapp/static/js/main.2b0e32e2.chunk.js",
+    "main.js.map": "/my-profileapp/static/js/main.2b0e32e2.chunk.js.map",
+    "runtime~main.js": "/my-profileapp/static/js/runtime~main.63aa8a1e.js",
+    "runtime~main.js.map": "/my-profileapp/static/js/runtime~main.63aa8a1e.js.map",
+    "static/js/2.373ccd69.chunk.js": "/my-profileapp/static/js/2.373ccd69.chunk.js",
+    "static/js/2.373ccd69.chunk.js.map": "/my-profileapp/static/js/2.373ccd69.chunk.js.map",
+    "index.html": "/my-profileapp/index.html",
+    "precache-manifest.550f889257debb93f3fb34d290c7ed49.js": "/my-profileapp/precache-manifest.550f889257debb93f3fb34d290c7ed49.js",
+    "service-worker.js": "/my-profileapp/service-worker.js",
+    "static/css/main.4697979b.chunk.css.map": "/my-profileapp/static/css/main.4697979b.chunk.css.map"
+  }
+}
