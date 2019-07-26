@@ -14,29 +14,35 @@ class Telephone extends React.Component {
       direction: 39
     };
     
-    this.setDirection = this.setDirection.bind(this);
     this.moveCircleA = this.moveCircleA.bind(this);
-    this.startDial = this.startDial.bind(this);
-    this.endDial = this.endDial.bind(this);    
+    this.startDial = this.startDial.bind(this); 
+  }
+  
+    // move circle A
+  moveCircleA() {
+    const x = parseInt(Math.random() * this.numCells);
+    const y = parseInt(Math.random() * this.numCells);
+    this.setState({ arr_circleA: [x, y] });
+  }
+  
+  startDial() {
+    this.moveCircleA();
+    this.setState({
+      status: 1,
+      arr_circleA: [10, 10]
+    });
   }
     
   render() {
+      this.numCells = Math.floor(this.props.size / 15);
     return (
       <div className="circleOuter">
-      <Circle />
-        <div className="circleInner">          
+        <button className="circleA" onClick={this.startDial}>
+            {this.props.value}
+        </button>  
+        <div className="circleInner">        
         </div>
       </div>
-    );
-  }
-}
-
-class Circle extends React.Component {
-  render() {
-    return (
-      <button className="circleA" onClick={function() { alert('click'); }}>
-        {this.props.value}
-      </button>
     );
   }
 }
