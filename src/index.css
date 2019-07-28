@@ -24,6 +24,7 @@ ul{
   position: absolute;
   top: 20%;
   left: 35%;  
+  //transform: translate(-50%,-50%);
 }
 
 .circleInner
@@ -48,8 +49,25 @@ ul{
   position: absolute;
   top: 2%;
   left: 39%;  
-  justify-content: center 
+  justify-content: center ;
+  //z-index: 800;
+  //transform: translate3d(192px, 230px, 0);
+  transform-origin: right;
+  animation: animate 20s linear infinite;
   }
+  
+@keyframes animate
+{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+    
+}
   
 #circleA p {
   margin: 30% 
