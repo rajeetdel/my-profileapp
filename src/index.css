@@ -46,27 +46,29 @@ ul{
   height: 40px;
   border-radius: 20px;
   display: block;
-  position: absolute;
+  position: relative;
   top: 2%;
   left: 39%;  
   justify-content: center ;
   //z-index: 800;
   //transform: translate3d(192px, 230px, 0);
   transform-origin: right;
-  animation: animate 20s linear infinite;
+  animation: animate 2s linear infinite;
   }
   
 @keyframes animate
 {
-    0%
-    {
-        transform: rotate(0deg);
-    }
-    100%
-    {
-        transform: rotate(360deg);
-    }
-    
+    0% {top: 5px; left: 200px;}
+    10% {top: 30px; left: 280px;}    
+    20% {top: 60px; left: 315px;}
+    30% {top: 90px; left: 335px;}
+    40% {top: 120px; left: 345px;}
+    50% {top: 140px; left: 350px;}
+    60% {top: 170px; left: 357px;}
+    70% {top: 200px; left: 355px;}
+    80% {top: 230px; left: 348px;}
+    90% {top: 260px; left: 342px;}
+    100% {top: 280px; left: 327px;}    
 }
   
 #circleA p {
