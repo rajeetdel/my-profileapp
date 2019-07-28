@@ -20,28 +20,22 @@ class Telephone extends React.Component {
   
     // move circle A
   moveCircleA() {
-    const x = parseInt(Math.random() * this.numCells);
-    const y = parseInt(Math.random() * this.numCells);
-    this.setState({ arr_circleA: [x, y] });
+    this.setState({ arr_circleA: [0, 0] });
   }
   
   startDial() {
     this.moveCircleA();
     this.setState({
       status: 1,
-      arr_circleA: [10, 10]
+      arr_circleA: [1, 1]
     });
   }
     
   render() {
-      this.numCells = Math.floor(this.props.size / 15);
     return (
       <div className="circleOuter">
-        <button className="circleA" onClick={this.startDial}>
-            {this.props.value}
-        </button>  
-        <div className="circleInner">        
-        </div>
+        <button className="circleA" onClick={this.startDial}></button>  
+        <div className="circleInner"></div>
       </div>
     );
   }
