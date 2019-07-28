@@ -28,7 +28,7 @@ ul{
 }
 
 .circleInner
-{ border: outset 20px blue;
+{ border: outset 20px green;
   border: inset 2px red;
   width: 300px;
   height: 300px;
@@ -53,7 +53,7 @@ ul{
   //z-index: 800;
   //transform: translate3d(192px, 230px, 0);
   transform-origin: right;
-  animation: animate 2s linear infinite;
+  animation: animate 1s linear infinite;
   }
   
 @keyframes animate
@@ -71,7 +71,11 @@ ul{
     100% {top: 280px; left: 327px;}    
 }
   
-#circleA p {
-  margin: 30% 
+p {
+  margin: 10%;
+  color: orange;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+  font-weight: bold;
   }
   

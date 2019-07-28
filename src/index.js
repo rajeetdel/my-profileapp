@@ -34,7 +34,9 @@ class Telephone extends React.Component {
   render() {
     return (
       <div className="circleOuter">
-        <button className="circleA" onClick={this.startDial}></button>  
+        <button className="circleA" onClick={this.startDial}>
+        <p>A</p>
+        </button>  
         <div className="circleInner"></div>
       </div>
     );
