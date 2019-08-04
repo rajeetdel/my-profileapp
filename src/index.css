@@ -2,17 +2,6 @@ body{
   font-family: "Helvetica Neue";
   font-weight: 200;
 }
-ul{
-  list-style: none;
-  padding-left: 0em;
-  margin: 0em;
-}
-
-*{
-  -webkit-transition: all 300ms ease-out;
-  -moz-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-}
 
 .circleOuter
 { border: outset 20px blue;
@@ -24,7 +13,6 @@ ul{
   position: absolute;
   top: 20%;
   left: 35%;  
-  //transform: translate(-50%,-50%);
 }
 
 .circleInner
@@ -39,6 +27,20 @@ ul{
   left: 12%;  
 }
 
+.circleAA
+{ border: outset 20px blue;
+  border: inset 2px red;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  top: 1%;
+  left: 39%;  
+  justify-content: center ;
+  cursor: pointer
+  }
+
 .circleA
 { border: outset 20px blue;
   border: inset 2px red;
@@ -50,8 +52,6 @@ ul{
   top: 2%;
   left: 39%;  
   justify-content: center ;
-  //z-index: 800;
-  //transform: translate3d(192px, 230px, 0);
   transform-origin: right;
   animation: animate 1s linear infinite;
   }
